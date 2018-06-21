@@ -1,0 +1,45 @@
+<script>
+  var a =  prompt('a:')
+  var b =  prompt('b:')
+  var c =  prompt('c:')
+  var d =  prompt('d:')
+  var m =  prompt('m:')
+  var n =  prompt('n:')
+
+  var x = (d* m - b * n) / (a * d - c * b);
+
+  var y = (c* m - a * n) / (b * c - a * d);
+
+  if (a / c !== b / d) {
+    alert(x + " " + y);
+  } else if (a / c == b / d && a / c == m / n) {
+    alert("无唯一解" + "/" + "有无穷个解"); 
+  } else{
+    alert("无解");
+  }
+
+</script>
+
+
+<script>
+
+  var a1 = +prompt('a1:')
+  var b1 = +prompt('b1:')
+  var c1 = +prompt('c1:')
+  var delta = b1 * b1 - 4 * a1 * c1
+  var s_delta = Math.sqrt(delta)
+
+  var x1 = (-b1 + s_delta) / (2 * a1)
+  var x2 = (-b1 - s_delta) / (2 * a1)
+  var x3 = (-b1 + s_delta) / (2 * a1) + "i"
+  var x4 = (-b1 - s_delta) / (2 * a1) + "i"
+  if (delta > 0){
+    alert(x1 + " " + x2)
+  } else if(delta == 0){
+    alert(x1)
+  } else{
+    alert(x3 + " " + x4)
+  }
+
+</script>
+
